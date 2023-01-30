@@ -4,15 +4,18 @@ import { BrowserRouter as Router, Navigate } from "react-router-dom";
 import Check from "./check";
 
 function Home() {
-  const [emailError, setEmailError] = useState("");
-  const [nameError, setNameError] = useState("");
-  const [numError, setNumError] = useState("");
-  // const[disabled,setDisabled] = useState(false);
+  const [goToNotes, setGoToNotes] = useState(false);
 
+  const [emailError, setEmailError] = useState(" ");
+  const [nameError, setNameError] = useState(" ");
+  const [numError, setNumError] = useState(" ");
+  // const[disabled,setDisabled] = useState(true);
+
+  const [emailVerified, setEmailVeried] = useState(false);
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const nameRegex = /^[a-zA-Z\s-]+$/;
   const numRegex = /^[7-9]\d{9}$/;
-  const ifErrors = emailError.length && nameError.length && numError.length;
+  const ifErrors = nameError.length || emailError.length || numError.length;
 
   function validateName(name: string) {
     if (nameRegex.test(name)) {
@@ -25,6 +28,7 @@ function Home() {
   function validateEmail(email: string) {
     if (emailRegex.test(email)) {
       setEmailError("");
+      setEmailVeried(true);
     } else {
       setEmailError("Enter valid Email!");
     }
@@ -40,11 +44,10 @@ function Home() {
 
   function gotoHandler() {
     if (!ifErrors) {
-      setGoToNotes(true);
-    } else setGoToNotes(false);
+     setGoToNotes(true);
+    }
   }
 
-  const [goToNotes, setGoToNotes] = React.useState(false);
   if (goToNotes) {
     return <Navigate to="notes" />;
   }
