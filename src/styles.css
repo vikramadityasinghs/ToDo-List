@@ -27,6 +27,9 @@ h1 {
 .details-field {
   padding: 2rem;
 }
+.details-field input {
+  text-align: center;
+}
 
 .entry-field {
   background: #f2f5fa;
@@ -37,6 +40,17 @@ h1 {
   font-size: 1rem;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #000;
+}
+
+.email-field {
+  background: #f2f5fa;
+  border-radius: 10px;
+  height: 50px;
+  width: 99%;
+  border: none;
+  font-size: 1rem;
+  margin-top: 20px;
   color: #000;
 }
 
@@ -60,6 +74,14 @@ h1 {
   width: 70%;
   height: 2rem;
   padding: 0%;
+}
+
+.email-div {
+  height: 90px;
+}
+.email-div span {
+  padding: 0;
+  position: relative;
 }
 
 .checkbox {
