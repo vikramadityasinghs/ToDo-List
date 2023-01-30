@@ -1,10 +1,9 @@
 import { useState } from "react";
-import {render} from "react-dom";
-import { TodoListItem } from "./TodoListItem";
-import Todo from "./types.s";
-import { TodoList } from "./TodoList";
-import { AddTodoForm } from "./AddTodoForm";
-
+import { render } from "react-dom";
+import { TodoListItem } from "./Todo/TodoListItem";
+import Todo from "./Todo/types.s";
+import { TodoList } from "./Todo/TodoList";
+import { AddTodoForm } from "./Todo/AddTodoForm";
 
 import "../src/styles.css";
 type ToggleTodo = (selectedTodo: Todo) => void;
@@ -47,7 +46,6 @@ function Notes() {
       <div className="heading main">
         <TodoList todos={todos} toggleTodo={toggleTodo} />
         <AddTodoForm addTodo={addTodo} />
-      
       </div>
     </>
   );

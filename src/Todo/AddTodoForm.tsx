@@ -1,5 +1,5 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react';
-import "../src/styles.css";
+import "../../src/styles.css";
 type AddTodo = (text: string) => void; 
 
 interface AddTodoFormProps {
