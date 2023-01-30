@@ -1,0 +1,72 @@
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #f3f5fb;
+}
+
+h1 {
+  color: #000;
+}
+
+.main {
+  position: fixed;
+  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 40rem;
+  width: 34rem;
+  background-color: white;
+}
+
+.heading {
+  text-align: center;
+}
+
+.details-field {
+  padding: 2rem;
+}
+
+.entry-field {
+  background: #f2f5fa;
+  border-radius: 10px;
+  height: 50px;
+  width: 99%;
+  border: none;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.details {
+  font-weight: 600;
+}
+
+.button-style {
+  background: #ff7a4f;
+  color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  height: 60px;
+  font-weight: 700;
+  margin-top: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.Inputfield {
+  width: 70%;
+  height: 2rem;
+  padding: 0%;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+}
+
+.todoListItem {
+  font-size: 2rem;
+}/*# sourceMappingURL=styles.css.map */
